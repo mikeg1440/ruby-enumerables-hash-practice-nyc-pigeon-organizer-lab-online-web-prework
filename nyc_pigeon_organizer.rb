@@ -56,9 +56,6 @@ def nyc_pigeon_organizer(data)
               value = subkey.to_s
 
             if pidgeons[name][newKey]
-              puts "::--KEY EXISTS--::"
-              puts "--IS VALUE--: #{pidgeons[name][newKey]}"
-              puts "Adding #{value} to array"
               pidgeons[name][newKey].push(value)
             else
               pidgeons[name][newKey] = [value]
