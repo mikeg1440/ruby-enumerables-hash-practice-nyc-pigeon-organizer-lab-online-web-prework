@@ -1,3 +1,11 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  
+  pidgeons = {}
+  
+  puts "DATA: #{data[:gender]}"
+
+  data.each do |key, attrs|
+    puts "Key: #{key}\nAttrs: #{attrs}"
+  end
+ 
 end
