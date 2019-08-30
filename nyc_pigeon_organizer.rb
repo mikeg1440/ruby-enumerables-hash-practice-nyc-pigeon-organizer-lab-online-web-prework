@@ -23,9 +23,12 @@ def nyc_pigeon_organizer(data)
   
   pidgeons = {}
   
-  data.each do |key, attrs|
+  data.each do |key, hash|
     
-    attrs.each do |
+    hash.each do |subkey, attrs|
+      
+      puts "Key: #{key}\nSubkey: #{subkey}\nAttrs: #{attrs}"
+    end
     
   end
   
