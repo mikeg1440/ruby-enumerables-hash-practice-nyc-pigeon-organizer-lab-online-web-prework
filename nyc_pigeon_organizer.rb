@@ -34,8 +34,8 @@ def nyc_pigeon_organizer(data)
           if !pidgeons[name]
             pidgeons[name] = {
               :color => [],
-              :lives => [],
-              
+              :gender => [],
+              :lives => []
             }
             
             newKey = subkey.to_s
