@@ -1,0 +1,113 @@
+# pigeon_data = {
+#   :color => {
+#     :purple => ["Theo", "Peter Jr.", "Lucky"],
+#     :grey => ["Theo", "Peter Jr.", "Ms. K"],
+#     :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
+#     :brown => ["Queenie", "Alex"]
+#   },
+#   :gender => {
+#     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
+#     :female => ["Queenie", "Ms. K"]
+#   },
+#   :lives => {
+#     "Subway" => ["Theo", "Queenie"],
+#     "Central Park" => ["Alex", "Ms. K", "Lucky"],
+#     "Library" => ["Peter Jr."],
+#     "City Hall" => ["Andrew"]
+#   }
+# }
+
+# pigeon_data = {
+#   :color => {
+#     :brown => ["Luca"],
+#     :black => ["Lola"],
+#   },
+#   :gender => {
+#     :male => ["Luca"],
+#     :female => ["Lola"]
+#   },
+#   :lives => {
+#     "Central Park" => ["Lola"],
+#     "Library" => ["Luca"]
+#   }
+# }
+
+
+
+def nyc_pigeon_organizer(data)
+
+  
+  pidgeons = {}
+  
+  data.each do |key, hash|
+    
+    hash.each do |subkey, attrs|
+      
+      # puts "Key: #{key}\nSubkey: #{subkey}\nAttrs: #{attrs}"
+      
+      if attrs.size > 1 
+        attrs.each do |name|
+          if !pidgeons[name]
+            # puts "Creating New Key For #{name}"
+            pidgeons[name.to_s] = {
+              :color => [],
+              :gender => [],
+              :lives => []
+            }
+
+            value = subkey.to_s                 # convert our value to string in case it is not already
+            newKey = key.to_sym                 # convert our new key to a symbol
+            
+            if pidgeons[name][newKey]           # if key exists then push new value to array or else set value inside array
+              pidgeons[name][newKey].push(value)
+            else
+              pidgeons[name][newKey] = [value]
+            end
+            
+          else                                  # if pidgeons[name] exists already then this code runs
+            # puts "Key #{name} exists already"
+            
+              newKey = key.to_sym
+              value = subkey.to_s
+
+            if pidgeons[name][newKey]
+              # puts "Adding #{value} to cart[#{name}][#{newKey}]"
+              pidgeons[name][newKey].push(value)
+            else
+              # puts "Adding #{value} to cart[#{name}][#{newKey}]"
+              pidgeons[name][newKey] = [value]
+              
+            end
+            
+          end
+          
+        end
+        
+      else
+        
+        name = attrs.first
+        
+        if !pidgeons[name]
+          pidgeons[name] = {}
+        end
+
+
+        if pidgeons[name][key]
+          pidgeons[name][key].push(subkey)
+        else
+          pidgeons[name][key] = [subkey.to_s]
+        end
+        
+      end
+    
+    end
+    
+  end
+  
+  
+  p pidgeons
+ 
+end
+
+
+# nyc_pigeon_organizer(pigeon_data)
