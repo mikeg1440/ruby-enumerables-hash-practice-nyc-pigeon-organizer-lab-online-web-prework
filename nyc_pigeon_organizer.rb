@@ -44,7 +44,7 @@ def nyc_pigeon_organizer(data)
   #   if 
   # end
   
-  pidgeons
+  p pidgeons
  
 end
 
