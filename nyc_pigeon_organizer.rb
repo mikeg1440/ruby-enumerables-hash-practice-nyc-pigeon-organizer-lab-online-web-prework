@@ -54,11 +54,17 @@ def nyc_pigeon_organizer(data)
             
               newKey = key.to_sym
             
-              puts ":::#{subkey.class}"
-              puts pidgeons[name][newKey].class
-              puts "$$$" + pidgeons[name][newKey].to_s
-              puts "***"
-              puts pidgeons[name][newKey]
+
+
+            if pidgeons[name][newKey]
+              puts "::KEY EXISTS::"
+              puts "IS VALUE: #{pidgeons[name][newKey]}"
+              pidgeons[name][newKey].push(value)
+            else
+              pidgeons[name][newKey] = [value]
+            end
+
+              
             
             
           end
