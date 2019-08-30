@@ -33,7 +33,12 @@ def nyc_pigeon_organizer(data)
         attrs.each do |name|
           if !pidgeons[name]
             pidgeons[name] = {}
-            pidgeons[name][key] = subkey
+            
+            if pidgeons[name][key]
+              pidgeons[name][key] += subkey
+            else
+              pidgeons[name][key] = subkey
+            end
           end
           
           
