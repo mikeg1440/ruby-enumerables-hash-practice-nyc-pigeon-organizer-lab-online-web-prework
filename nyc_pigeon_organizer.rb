@@ -57,7 +57,7 @@ def nyc_pigeon_organizer(data)
               newKey = key.to_sym
             
               puts ":::#{subkey.class}"
-              puts pidgeons[name][":#{key}"].class
+              puts pidgeons[name][newKey].class
               puts "$$$" + pidgeons[name][":#{key}"].to_s
               puts "***"
               puts pidgeons[name][":#{key}"]
