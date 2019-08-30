@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   puts "DATA: #{data[:gender]}"
 
   data.each do |key, attrs|
-    puts "Key: #{key}\nAttrs: #{attrs}"
+    puts "Key: #{key}\nAttrs: #{attrs.values}"
+    
   end
  
 end
