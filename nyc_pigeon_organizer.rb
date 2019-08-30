@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
       if attrs.size > 1 
         attrs.each do |name|
           if !pidgeons[name]
-            pidgeons[name] = {
+            pidgeons[name.to_s] = {
               :color => [],
               :gender => [],
               :lives => []
