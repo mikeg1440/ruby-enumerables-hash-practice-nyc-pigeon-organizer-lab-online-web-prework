@@ -38,7 +38,7 @@ def nyc_pigeon_organizer(data)
               :lives => []
             }
             newKey = ":#{key}"
-            puts pidgeons[name][":#{key}"].class
+            puts pidgeons[name][newKey].class
             
             value = subkey.to_s
             
