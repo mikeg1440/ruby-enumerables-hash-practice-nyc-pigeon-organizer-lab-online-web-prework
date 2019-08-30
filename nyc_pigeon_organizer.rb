@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
           if !pidgeons[name]
             pidgeons[name] = {}
             
-            puts subkey.to_s
+            newKey = subkey.to_s
             
             if pidgeons[name][key]
               pidgeons[name][":#{key}"].push(subkey)
