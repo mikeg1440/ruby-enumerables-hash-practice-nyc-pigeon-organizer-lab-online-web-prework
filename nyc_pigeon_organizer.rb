@@ -37,9 +37,7 @@ def nyc_pigeon_organizer(data)
               :gender => [],
               :lives => []
             }
-            newKey = ":#{key}"
-            puts pidgeons[name][newKey].class
-            
+
             value = subkey.to_s
             
             if pidgeons[name][":#{key}"]
@@ -51,6 +49,15 @@ def nyc_pigeon_organizer(data)
             else
               pidgeons[name][":#{key}"] = [value]
             end
+            
+          else
+            
+              puts ":::"
+              puts pidgeons[name][":#{key}"]
+              pidgeons[name][":#{key}"].push(value)
+              puts "***"
+              puts pidgeons[name][":#{key}"]
+            
             
           end
           
