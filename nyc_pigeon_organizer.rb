@@ -43,7 +43,7 @@ def nyc_pigeon_organizer(data)
             if pidgeons[name][":#{key}"]
               puts ":::"
               puts pidgeons[name][":#{key}"]
-              pidgeons[name][":#{key}"].push(newKey)
+              pidgeons[name][":#{key}"].push(value)
               puts "***"
               puts pidgeons[name][":#{key}"]
             else
