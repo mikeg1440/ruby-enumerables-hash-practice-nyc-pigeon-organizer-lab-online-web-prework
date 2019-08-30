@@ -53,7 +53,7 @@ def nyc_pigeon_organizer(data)
           else
             
               newKey = key.to_sym
-            value = subkey.to_s
+              value = subkey.to_s
             
 
 
