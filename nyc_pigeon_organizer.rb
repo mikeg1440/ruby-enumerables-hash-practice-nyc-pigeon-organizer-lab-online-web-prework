@@ -38,7 +38,7 @@ def nyc_pigeon_organizer(data)
               :lives => []
             }
             
-            newKey = subkey.to_s
+            vallue = subkey.to_s
             
             if pidgeons[name][":#{key}"]
               puts ":::"
