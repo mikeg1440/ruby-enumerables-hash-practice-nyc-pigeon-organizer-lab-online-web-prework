@@ -32,12 +32,15 @@ def nyc_pigeon_organizer(data)
       if attrs.size > 1 
         attrs.each do |name|
           if !pidgeons[name]
-            pidgeons[name] = {}
+            pidgeons[name] = {
+              :
+              
+            }
             
             if pidgeons[name][key]
               pidgeons[name][key].push(subkey)
             else
-              pidgeons[name][key] = [(subkey.delete(":"))]
+              pidgeons[name][key] = 
             end
             
           end
