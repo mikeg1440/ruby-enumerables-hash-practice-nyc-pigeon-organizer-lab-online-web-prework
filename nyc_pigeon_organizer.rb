@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
     
     hash.each do |subkey, attrs|
       
-      puts "Key: #{key}\nSubkey: #{subkey}\nAttrs: #{attrs}"
+      puts "Key: #{key}\nSubkey: #{subkey}\nAttrs: #{attrs.values}"
     end
     
   end
