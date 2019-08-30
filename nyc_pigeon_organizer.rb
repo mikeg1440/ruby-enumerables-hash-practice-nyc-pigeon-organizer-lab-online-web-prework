@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
   puts "DATA: #{data[:gender][:male]}"
 
   males = data[:gender][:male]
-  females = data[:gender][:male]
+  females = data[:gender][:female]
 
   puts "Males: #{males}\nFEmales: #{females}"
 
