@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
   
   puts "DATA: #{data[:gender][:male].values}"
 
-  males = data[:gender][:male]
-  females = data[:gender][:male]
+  # males = data[:gender][:male]
+  # females = data[:gender][:male]
 
-  puts "Males: #{males}\nFEmales: #{females}"
+  # puts "Males: #{males}\nFEmales: #{females}"
 
 
   # data.each do |key, attrs|
