@@ -54,8 +54,6 @@ def nyc_pigeon_organizer(data)
             
               newKey = key.to_sym
               value = subkey.to_s
-            
-
 
             if pidgeons[name][newKey]
               puts "::--KEY EXISTS--::"
@@ -65,18 +63,12 @@ def nyc_pigeon_organizer(data)
             else
               pidgeons[name][newKey] = [value]
             end
-
-              
-            
             
           end
           
-          
         end
       end
-      
-      
-      
+    
     end
     
   end
