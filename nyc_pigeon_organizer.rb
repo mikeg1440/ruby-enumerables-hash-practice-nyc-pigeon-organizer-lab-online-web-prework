@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
   
   pidgeons = {}
   
-  puts "DATA: #{data[:gender][:male].values}"
+  puts "DATA: #{data[:gender][:male]}"
 
   # males = data[:gender][:male]
   # females = data[:gender][:male]
