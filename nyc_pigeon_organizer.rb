@@ -44,7 +44,7 @@ def nyc_pigeon_organizer(data)
             
             if pidgeons[name][newKey]
               puts "::KEY EXISTS::"
-              puts pidgeons[name][newKey]
+              puts "IS VALUE: #{pidgeons[name][newKey]}"
               pidgeons[name][newKey].push(value)
               puts "***"
               puts pidgeons[name][newKey]
