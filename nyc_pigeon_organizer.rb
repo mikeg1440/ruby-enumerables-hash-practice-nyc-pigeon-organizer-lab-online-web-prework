@@ -43,8 +43,6 @@ def nyc_pigeon_organizer(data)
             newKey = key.to_sym
             
             if pidgeons[name][newKey]
-              puts "::KEY EXISTS::"
-              puts "IS VALUE: #{pidgeons[name][newKey]}"
               pidgeons[name][newKey].push(value)
             else
               pidgeons[name][newKey] = [value]
