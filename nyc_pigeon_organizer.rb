@@ -37,9 +37,9 @@ def nyc_pigeon_organizer(data)
             newKey = subkey.to_s
             
             if pidgeons[name][key]
-              pidgeons[name][":#{key}"].push(subkey)
+              pidgeons[name][":#{key}"].push(newKey)
             else
-              pidgeons[name][":#{key}"] = [subkey]
+              pidgeons[name][":#{key}"] = [newKey]
             end
             
           end
