@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
           if !pidgeons[name]
             pidgeons[name] = {}
             
-            subkey = subkey.delete(":")
+            puts subkey
             
             if pidgeons[name][key]
               pidgeons[name][key].push(subkey)
