@@ -60,7 +60,7 @@ def nyc_pigeon_organizer(data)
               puts pidgeons[name][newKey].class
               puts "$$$" + pidgeons[name][newKey].to_s
               puts "***"
-              puts pidgeons[name][":#{key}"]
+              puts pidgeons[name][newKey]
             
             
           end
