@@ -56,7 +56,9 @@ def nyc_pigeon_organizer(data)
             if pidgeons[name][newKey]
               pidgeons[name][newKey].push(value)
             else
+              puts "Adding #{value} to cart[#{name}][#{newKey}]"
               pidgeons[name][newKey] = [value]
+              
             end
             
           end
