@@ -23,20 +23,27 @@ def nyc_pigeon_organizer(data)
   
   pidgeons = {}
   
-  puts "DATA: #{data[:gender][:male]}"
-
-  males = data[:gender][:male]
-  females = data[:gender][:female]
-
-  puts "Males: #{males}\nFEmales: #{females}"
-
-  males.each do |male|
-    pidgeons[male] = {}
+  data.each do |key, attrs|
+    
+    attrs.each do |
+    
   end
   
-  females.each do |female|
-    pidgeons[female] = {}
-  end
+  
+  # puts "DATA: #{data[:gender][:male]}"
+
+  # males = data[:gender][:male]
+  # females = data[:gender][:female]
+
+  # puts "Males: #{males}\nFEmales: #{females}"
+
+  # males.each do |male|
+  #   pidgeons[male] = {}
+  # end
+  
+  # females.each do |female|
+  #   pidgeons[female] = {}
+  # end
 
   # data.each do |key, attrs|
   #   puts "Key: #{key}\nAttrs: #{attrs.values}"
