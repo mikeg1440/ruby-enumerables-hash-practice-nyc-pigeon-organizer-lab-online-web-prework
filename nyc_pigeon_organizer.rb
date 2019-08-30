@@ -4,10 +4,12 @@ def nyc_pigeon_organizer(data)
   
   puts "DATA: #{data[:gender][:male].values}"
 
-  data[:gender].keys.each do |key, attrs|
+  males = data[:gender][:male]
+
+  data.each do |key, attrs|
     puts "Key: #{key}\nAttrs: #{attrs.values}"
     
-    
+    if 
   end
   
   pidgeons
