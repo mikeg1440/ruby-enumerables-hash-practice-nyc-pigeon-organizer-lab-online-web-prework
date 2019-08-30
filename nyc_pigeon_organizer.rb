@@ -30,6 +30,13 @@ def nyc_pigeon_organizer(data)
 
   puts "Males: #{males}\nFEmales: #{females}"
 
+  males.each do |male|
+    pidgeons[male] = {}
+  end
+  
+  females.each do |female|
+    pidgeons[female] = {}
+  end
 
   # data.each do |key, attrs|
   #   puts "Key: #{key}\nAttrs: #{attrs.values}"
